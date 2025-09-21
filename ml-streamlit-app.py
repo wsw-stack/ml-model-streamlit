@@ -7,7 +7,7 @@ from transformers import pipeline
 s3 = boto3.client('s3')
 bucket_name = 'mlops-tutorial-models'
 
-local_path = 's3_download'
+local_path = 'tinybert-sentiment-analysis'
 s3_prefix = 'ml-models/tinybert-sentiment-analysis'
 
 def download_dir(local_path, s3_prefix):
